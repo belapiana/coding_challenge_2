@@ -7,6 +7,14 @@ console.log(`Your tip amount is: $${tip}`);
 console.log(`This brings your total to: $${total}`); 
 
 function calculateTip (a) {
-return a <= 300 && a >= 50 ? a*0.15 : a*0.20 }
+return a <= 300 && a >= 50 ? a*0.15 : a*0.20 };
 
-console.log (calculateTip (100))
+console.log (calculateTip (100));
+
+let bills = [
+    275, 40, 430, 125, 555, 44
+];
+
+const tips = bills.map(bills => calculateTip(bills));
+console.log (tips);
+
