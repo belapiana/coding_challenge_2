@@ -1,4 +1,4 @@
-let bill = 25.00;
+let bill = 30.00;
 let tip = bill <= 300 && bill >= 50 ? bill*0.15 : bill*0.2;
 let total = bill+tip;
 
@@ -18,3 +18,5 @@ let bills = [
 const tips = bills.map(bills => calculateTip(bills));
 console.log (tips);
 
+const totals = bills.map (bills, index => bills+tips[index]);
+console.log (totals);
